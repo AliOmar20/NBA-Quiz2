@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Basketball</title>
+      <script src="quizproject.js"></script>
+      <link rel="stylesheet" type="text/css" href="quizproject.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="theme-color" content="#090909"/>
+      <link rel="icon" href="quizimages/favicon.ico" type="image/x-icon"/>
+      <link rel="manifest" href="manifest.json">
+	  <meta name="A quiz about NBA basketball">
+     <meta name="description" content="A quiz about NBA basketball">
+     <link rel="apple-touch-icon" href="/example.png">
+   </head>
+   <body>
+      <div id="lightbox" onclick="closeLightBox()">
+         <div id="message">This is the message</div>
+      </div>
+      <h1>NBA Basketball Quiz</h1>
+      <div class="grid-container">
+         <div class="header">
+            <div id="question">The Question</div>
+         </div>
+         <div class="left">
+            <div>
+               <div class="options" id="a" onclick="markIt('a')">A.</div>
+               <div class="options" id="b" onclick="markIt('b')">B.</div>
+               <div class="options" id="c" onclick="markIt('c')">C.</div>
+               <div class="options" id="d" onclick="markIt('d')">D.</div>
+            </div>
+            <div id="hint">
+               Hint goes here.
+            </div>
+            <div id="countdown"></div>
+         </div>
+         <div class="right"> <img id="image" src="quizimages/q1.jpg" alt="image"></div>
+         <div class="footer1">
+            <button id="hintButton">Hint?</button>
+         </div>
+         <div class="footer2">
+            <p>Score:  <span id="score"></span></p>
+         </div>
+      </div>
+   </body>
+</html>
